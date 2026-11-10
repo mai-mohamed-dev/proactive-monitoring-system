@@ -1,6 +1,6 @@
 # Zabbix 7.0: Proactive Monitoring System
 
-A small monitoring stack that runs on Vagrant VMs. One **monitor server** runs Zabbix 7.0. Any number of **target VMs** run an **active** Zabbix agent and add themselves to the server automatically (auto-registration). No Docker, no manual host creation.
+A small monitoring stack that runs on Vagrant VMs. One **monitor server** runs Zabbix 7.0. Any number of **target VMs** run an **active** Zabbix agent and add themselves to the server automatically (auto-registration). [Automated provisioning of a multi-tier Java web app with Vagrant](01-vagrant-multi-tier-java-app) has been used to test this monitoring system.
 
 ## Architecture
 - **Active agents** connect out to the server on **10051**. The server never polls them, so the targets need no inbound port.
